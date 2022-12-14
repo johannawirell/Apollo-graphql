@@ -17,4 +17,11 @@ export const typeDefs = gql`
   }
 
   # Mutations
+  type Mutation {
+    createUser(
+      name: String!,
+      age: Int!,
+      married: Boolean!
+    ): User!
+  }
 `

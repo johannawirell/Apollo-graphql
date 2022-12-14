@@ -8,5 +8,13 @@ export const resolvers = {
     getAllUsers() {
       return users
     }
+  },
+
+  Mutation: {
+    createUser(parent, args) {
+      const newUser = args
+      users.push(newUser)
+      return newUser
+    }
   }
 }
